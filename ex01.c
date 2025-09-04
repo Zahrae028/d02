@@ -35,7 +35,7 @@ int main(){
     s = lenghtof(GSL)+ lenghtof(IG) + lenghtof(ED)+ lenghtof(NA) + lenghtof(CC);
     if (s!=13)
     {
-        /* code */
+        printf("MAKE SURE YOU ENTERED 13 NUMBERS!!");
     }
     
         
