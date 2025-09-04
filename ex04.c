@@ -1,22 +1,19 @@
 #include <stdio.h>
 
 int main (){
-    int day[2];
-    int month[2];
-    int year[2];
-    int converted[2];
-    for (int i = 0; i < 2; i++)
-    {
+    int year1 , year2, month1,month2,day1,day2;
+    
         
-    printf("Entrez la date n %d :",i+1);
-    scanf("%d/%d/%d",day[i],month[i],year[i]);
-    }
-    int earliest;
-
-    for (int i = 0; i < 2; i++)
-    {
-        converted[i]= (year[i]*365);
-    }
+    printf("Entrez la date 1 :");
+    scanf("%d/%d/%d",&day1,&month1,&year1);
+    printf("Entrez la date 2 :");
+    scanf("%d/%d/%d",&day2,&month2,&year2);
+    
+    if((year1<year2 )|| (year1==year2 && month1<month2) || (year1==year2 && month1==month2 && day1<day2)){
+            printf("%d/%d/%d est plus tôt que %d/%d/%d ",day1,month1,year1,day2,month2,year2);
+        }else{
+                    printf("%d/%d/%d est plus tôt que %d/%d/%d ",day2,month2,year2,day1,month1,year1);
+        }
     
     
 
